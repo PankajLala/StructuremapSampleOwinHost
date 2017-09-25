@@ -23,7 +23,7 @@ namespace StructuremapSampleOwinHostOwinHost
 
             System.Web.Http.GlobalConfiguration.Configure(WebApiConfig.Register);
 
-            Hangfire.GlobalConfiguration.Configuration.UseSqlServerStorage(@"Server=XIPL6L398\SQLEXPRESS; Database=Hangfire;uid=XIPL\pankaj.lala;Password=Admin@123;Integrated Security=true");
+            Hangfire.GlobalConfiguration.Configuration.UseSqlServerStorage(@"Server=XIPL6LXXX\SQLEXPRESS; Database=Hangfire;uid=Xxxx\xxxx.xxxx;Password=XXXXX;Integrated Security=true");
             
             RecurringJob.AddOrUpdate<EmailService>(myService => myService.SendMail("my mail"), Cron.Minutely);
         }
